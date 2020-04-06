@@ -4,7 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	
+
 }
 
 #page {
@@ -15,8 +15,14 @@ body {
 }
 
 h1 {
+  white-space: nowrap;
+  text-indent: -1000px;
 	margin: 0;
 	padding: 0;
+  background-image: url('../images/deadhorselivedick_title.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80px;
 }
 
 h2 {
@@ -32,11 +38,11 @@ h2 {
 #saying {
 	background-color: #d279b3;
 	border: 4px solid black;
-	
+
 	-moz-border-radius: 12px;
 	border-radius: 12px;
 	-webkit-border-radius: 12px;
-	
+
 	-moz-box-shadow: 0px 5px 10px #666;
   -webkit-box-shadow: 0px 5px 10px #666;
   box-shadow: 0px 5px 10px #666;
@@ -44,7 +50,7 @@ h2 {
 	padding: 25px;
 	font-size: 1.75em;
 	font-weight: bold;
-	
+
 }
 
 #footer {
