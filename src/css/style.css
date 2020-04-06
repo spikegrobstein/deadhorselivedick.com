@@ -51,6 +51,7 @@ h2 {
 	font-size: 1.75em;
 	font-weight: bold;
 
+  user-select: none; /* mozilla browsers */
 }
 
 #footer {
