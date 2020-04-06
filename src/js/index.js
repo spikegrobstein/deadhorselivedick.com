@@ -1,3 +1,6 @@
+import '../css/style.css';
+import $ from 'jquery';
+
 var phrases = [
 	[ "Dead horse... Hot chick...", "LIVE DICK" ],
 	[ "If the horse is dead, the dick must be too...", "NOT HERE, ASSHOLE" ],
@@ -23,18 +26,19 @@ var phrases = [
 ];
 
 // start program
-$(document).ready(function() {	
+$(document).ready(function() {
 	$('#saying').click(update_phrase).click();
 });
 
 // change the phrase in the view
 function update_phrase() {
-	
+
 	$('#saying').append("<div style='display: hidden;'>" + random_phrase() + "</div>");
-	
+
 	if ($('#saying div').length > 1) {
-		$('#saying div:first').hide('slide', { direction: 'down' }, 250);
-		$('#saying div:first').remove();
+    const first = $('#saying div:first');
+    first.slideDown(250, () => { first.remove() });
+		// $('#saying div:first').remove();
 	}
 	$('#saying div:last').show('slide', { direction: 'up' }, 250);
 }
