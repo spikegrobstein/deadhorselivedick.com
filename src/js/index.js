@@ -37,10 +37,10 @@ function update_phrase() {
 
 	if ($('#saying div').length > 1) {
     const first = $('#saying div:first');
-    first.slideDown(250, () => { first.remove() });
-		// $('#saying div:first').remove();
+    first.hide();
+    first.remove();
 	}
-	$('#saying div:last').show('slide', { direction: 'up' }, 250);
+	$('#saying div:last').show();
 }
 
 // return a random phrase
